@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title> Infomuzik</title>
+    <meta charset="utf-8"/>
+    <meta name="autor" content="karl noumdem"/>
+    <meta name="description" content="Vous pouvez voir mes compétences et mes expériences"/>
+    <meta name="copyright" content="© CC BY-NC-SA 4.0" />
+    <link rel="stylesheet" type="text/css" href="StylePagePrincipale.css" />
+    <style>
+        #username {
+            width: 37.7vw;
+            height: 2.8vw;
+            border-radius: 0.3vw;
+            border: none;
+            font-size: 1.2vw;
+            margin-left: 0.5vw;
+        }
+    </style>
+    <!--script pour gerer la connexion-->
+    <script >
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "" || password === "") {
+                alert("Veuillez remplir tous les champs.");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <!--ma div de connection-->
+    <div class="connection-div centrerconnexion">
+        <h1>Connexion</h1>
+        <form id="loginForm" action="Login.php" method="post" onsubmit="return validateForm()">
+            <label for="username">Nom d'utilisateur :</label><br>
+            <input type="text" id="username" name="username" placeholder="Entrez votre nom d'utilisateur" required><br><br>
+            <label for="password">Mot de passe :</label><br>
+            <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required><br><br>
+            <button type="submit" name="action" value="login">Se connecter</button>
+            <button type="button" id="Problemedeco">problème de connection</button>
+            <button type="submit" name="action" value="new">nouveau compte</button>
+        </form>
+    </div>
+
+    <!-- Balise vidéo pour la vidéo en fond -->
+    <video autoplay loop muted id="video-background">
+        <source src="Images/videopageprincipale.mp4" type="video/mp4">
+        <!-- Ajoutez d'autres sources vidéo si nécessaire pour une compatibilité avec différents navigateurs -->
+    </video>
+</body>    
+</html>

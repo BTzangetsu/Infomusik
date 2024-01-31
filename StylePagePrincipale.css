@@ -1,0 +1,105 @@
+/*parametre div de connection*/
+.connection-div{
+    width: 38vw;
+    height: 55vh;
+    border-radius: 0.5vh;
+    padding: 8px;
+    margin-top: 30vh; /* Ajuster la marge supérieure pour positionner la div */
+    margin-left: 60vh;
+    background-color: rgba(255, 255, 255, 0.3); /* Utiliser rgba pour spécifier une couleur de fond avec opacité */
+    border: 2px solid white;
+    padding-right: 1vw;
+    border-radius: 2vw;
+}
+.centrerconnexion h1{
+    font-family: popolili;
+    text-align: center;
+}
+/*fin paramettre div de connection*/
+
+/*pour gerer la connexion*/
+input[type="email"],
+input[type="password"],
+button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: e0ffff;
+    color: #333;
+}
+/*fin connexion*/
+
+/*parametre button*/
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+/*fin parametre button*/
+
+/*implementation nouvelle police*/
+@font-face {
+    font-family: "cheche";
+    src: url('Fonds/FredokaOne-Regular.ttf') format('truetype');
+}
+.popolili{
+    font-family: 'cheche', sans-serif;
+    font-size: 60px;
+}
+/*fin implementation police*/
+
+/*pour la video de fond*/
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto; /* Pour empêcher le défilement vertical */
+}
+
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    z-index: -1;
+}
+/*fin video de fond*/
+
+
+.center1{
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    left: 50%;
+    top: 20px;
+    position: absolute;
+}
+
+.bnt{
+    border: 3px solid #ed560a;
+    border-radius: 5px;
+    font-size: 15px;
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+}
+btn.hower{
+    background-color: #ed560a;
+}
+
